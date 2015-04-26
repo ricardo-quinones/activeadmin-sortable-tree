@@ -102,6 +102,7 @@ module ActiveAdmin
           "data-max-levels"      => options[:max_levels],
           "data-start-collapsed" => options[:start_collapsed],
           "data-protect-root"    => options[:protect_root],
+          "data-custom-data"     => options[:custom_data]
         }
       end
 

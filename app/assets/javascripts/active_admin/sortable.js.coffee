@@ -57,7 +57,7 @@ $ ->
         $.ajax
           url: $this.data("sortable-url")
           type: "post"
-          data: $this.nestedSortable("serialize")
+          data: if $this.data("custom-data") then $this.data("custom-data-function")($this) else $this.nestedSortable('serialize')
         .always ->
           $this.find('.item').each (index) ->
             if index % 2

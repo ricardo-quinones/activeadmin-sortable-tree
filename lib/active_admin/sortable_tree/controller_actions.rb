@@ -13,7 +13,9 @@ module ActiveAdmin::SortableTree
                              :protect_root => false,
                              :collapsible => false, #hides +/- buttons
                              :start_collapsed => false,
-                             :sortable => true
+                             :sortable => true,
+                             # indicates if you would like customize the data sent back to the server
+                             :custom_data => false
 
       # BAD BAD BAD FIXME: don't pollute original class
       @sortable_options = options
